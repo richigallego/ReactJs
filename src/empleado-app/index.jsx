@@ -9,7 +9,8 @@ class EmpleadoApp extends React.Component {
   }
 
   componentWillMount() {
-    fetch('http://taller-angular.carlosazaustre.es/empleados')
+    /* we use fieldbook to get data info */
+    fetch('https://api.fieldbook.com/v1/5673ce826acfd703006d9726/sheet_1')
       .then((response) => {
         return response.json()
       })
